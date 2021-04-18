@@ -24,7 +24,7 @@ namespace ConfigCSharpDemo {
             //SDK初始化
             m_bInitSDK = CHCNetSDK.NET_DVR_Init();
             if (m_bInitSDK == false)
-                MessageBox.Show("NET_DVR_Init error!");
+                MessageBox.Show(@"NET_DVR_Init error!");
             else //保存SDK日志 To save the SDK log
                 CHCNetSDK.NET_DVR_SetLogToFile(3, "C:\\SdkLog\\", true);
         }
